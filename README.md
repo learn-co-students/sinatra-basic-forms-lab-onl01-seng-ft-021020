@@ -46,3 +46,18 @@ submission, view the puppy's information.
 6. Add a link on the homepage to the new puppy form.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-basic-forms-lab'>Sinatra Basic Forms Lab</a> on Learn.co and start learning to code for free.</p>
+
+
+
+pp
+  GET /
+    sends a 200 status code
+    has a link with the text "List A Puppy" (FAILED - 1)
+    has a link to list a puppy that links to /new (FAILED - 2)
+  GET /new
+    sends a 200 status code (FAILED - 3)
+    renders a form that can POST a name, breed, and age (FAILED - 4)
+  POST /puppy
+    sends a 200 status code (FAILED - 5)
+    recieves a request from /new at /puppy (FAILED - 6)
+    displays the puppy information dynamically (FAILED - 7)
